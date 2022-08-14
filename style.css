@@ -35,7 +35,7 @@
     height: 400px;
   }
   
-  #do {
+  #done {
     width: 100%;
     padding: 50px;
     font-size: 2em;
@@ -87,7 +87,7 @@
   }
   
   
-  /* Close Button --> for Closing Modal */
+  /* Close Button*/
   .close-btn {
     position: absolute;
     padding: 10px;
@@ -152,11 +152,6 @@
       box-shadow: 1px 1px 3px #3c3c3c;
   }
   
-  .task h1{
-    text-align: center;
-    padding: 10px;
-  }
-  
    .icons{
     position: absolute;
     bottom: 0;
@@ -173,9 +168,3 @@
     cursor: pointer;
   
   }
-  
-  .icons .fa-solid{
-    margin-right: 10px;
-
-    cursor: pointer;
-  } 

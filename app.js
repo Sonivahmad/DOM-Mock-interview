@@ -21,20 +21,20 @@ modalBtn.addEventListener("click", () => {
 
   container.classList.remove('active');
 
-  const msg = document.querySelector("#do"); //Textarea
+  const done = document.querySelector("#do"); 
 
   const task = document.createElement("div");
   task.classList.add("task");
-  mainContent.append(task);   //append task
+  mainContent.append(task);   
 
-  const taskhead = document.createElement("div"); //inside task(color);
+  const taskhead = document.createElement("div"); 
   taskhead.classList.add("task-head");
   taskhead.style.height = '35px';
   taskhead.style.backgroundColor = 'yellow';
   task.append(taskhead);
 
   const h1 = document.createElement('h1');
-  h1.innerText = msg.value;
+  h1.innerText = done.value;
   h1.setAttribute('readonly','readonly');
   task.append(h1);
 
@@ -57,6 +57,7 @@ modalBtn.addEventListener("click", () => {
   iconSet.classList.add('icon-set');
   icons.append(iconSet);
   iconSet.style.visibility = 'hidden';
+  
 
   const check = document.createElement('button');
   check.classList.add('check');
@@ -73,33 +74,6 @@ modalBtn.addEventListener("click", () => {
   pencil.innerHTML = '<i class="fa-solid fa-pencil"></i>';
   iconSet.append(pencil);
 
-
-  let delete_button = document.createElement("button");
-  delete_button.classList.add("delete");
-  delete_button.innerText = "\u{1F5D1}";
-  internalDiv.append(delete_button);
-
   ////////////////////////////////////////////////////
-
-  delete_button.addEventListener("click", (e) => {
-    if (task_input_element2.classList.contains("text1")) {
-      red.removeChild(task_element);
-    } else if (task_input_element2.classList.contains("text2")) {
-      yellow.removeChild(task_element);
-    } else if (task_input_element2.classList.contains("text3")) {
-      blue.removeChild(task_element);
-    } else if (task_input_element2.classList.contains("text4")) {
-      black.removeChild(task_element);
-    } else {
-      comp.removeChild(task_element);
-    }
-  });
-
-  const editbtn = document.querySelector('.fa-pencil');
-  editbtn.addEventListener('click',() =>{
-    editbtn.style.color = "blue";
-    h1.contentEditable = true;
-    console.log(h1);
-  })
 
 });
