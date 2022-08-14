@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">i
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e35ffbd1aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+          <a href="#" class="sidebar">Create Task</a>
+        </div>
+      </header>
+  
+      <main>
+        <section class="main">
+              <!-- added to check -->
+              <div class="main-content">
+        <!------------- Modal Area----------->
+        <section>
+          <div class="modal-container">
+            <button class="close-btn">close</button>
+            <div class="modal-content">
+              <div class="text-area">
+                <textarea
+                  name="task"
+                  id="do"
+                  cols="40"
+                  rows="0"
+                  placeholder="Please enter task !"
+                ></textarea>
+                <button type="button" class="btn">Done</button>
+              </div>
+              <div class="color-area">
+                <button class="box red"></button>
+                <button class="box yellow"></button>
+                <button class="box blue"></button>
+                <button class="box black"></button>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+        </section>
+      </main>
+      <script src="app.js"></script>
+</body>
+</html>

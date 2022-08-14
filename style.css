@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #9ba4b6;
+  }
+  
+  .header {
+    background-color: #3c3c3c;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Navbar Button --> Modal open when Click */
+  .sidebar {
+    text-align: center;
+    margin-left: 40px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #ff9d42;
+  }
+
+  
+  .color-area {
+    background-color: #3c3c3c;
+    padding: 50px;
+    width: 30%;
+    height: 400px;
+  }
+  
+  #do {
+    width: 100%;
+    padding: 50px;
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(89, 156, 13);
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  .btn {
+    position: absolute;
+    bottom: 20px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #ffa652;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #282829;
+    cursor: pointer;
+  }
+  
+  
+  .box {
+      text-align: center;
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .red {
+    background-color: red;
+    color:red;
+  }
+  .yellow {
+    background-color: yellow;
+    color:yellow;
+  }
+  .blue {
+    background-color: blue;
+    color:blue;
+  }
+  .black {
+    background-color: black;
+    color:black;
+  }
+  
+  
+  /* Close Button --> for Closing Modal */
+  .close-btn {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    color: grey;
+    /*background: black;*/
+    background: transparent;
+    font-size: 1.5em;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  /* Modal container -->*/
+  
+  .modal-container {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    background-color: #64c4c3;
+    box-shadow: 2px 3px 3px #817e7e;
+    visibility: hidden;
+    z-index: -1;
+  }
+  
+  .active {
+    visibility: visible;
+    z-index: 1;
+  }
+  
+  .modal-content {
+    display: flex;
+  }
+  
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+  }
+
+  
+  .main{
+      margin:50px;
+  }
+  
+  .main-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .task{
+    position: relative;
+      height: 200px;
+      width: 300px;
+      margin:10px;
+      background-color: #c5c6ff;
+      box-shadow: 1px 1px 3px #3c3c3c;
+  }
+  
+  .task h1{
+    text-align: center;
+    padding: 10px;
+  }
+  
+   .icons{
+    position: absolute;
+    bottom: 0;
+    height:35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  } 
+  
+   .icon .fa-solid{
+    margin-left:10px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+  }
+  
+  .icons .fa-solid{
+    margin-right: 10px;
+
+    cursor: pointer;
+  } 
