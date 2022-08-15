@@ -21,7 +21,7 @@ modalBtn.addEventListener("click", () => {
 
   container.classList.remove('active');
 
-  const done = document.querySelector("#do"); 
+  const done = document.querySelector("#done"); 
 
   const task = document.createElement("div");
   task.classList.add("task");
@@ -57,7 +57,6 @@ modalBtn.addEventListener("click", () => {
   iconSet.classList.add('icon-set');
   icons.append(iconSet);
   iconSet.style.visibility = 'hidden';
-  
 
   const check = document.createElement('button');
   check.classList.add('check');
